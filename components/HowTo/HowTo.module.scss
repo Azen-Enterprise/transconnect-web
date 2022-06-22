@@ -1,0 +1,73 @@
+.container {
+  width: 100%;
+  background-color: #162F26;
+  color: #fff
+}
+
+.Howto {
+  padding: 120px 80px 0 ;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+
+  &__tutorial {
+    margin-top: 80px;
+  }
+
+  &__btn {
+    margin-top: 20px;
+    font-weight: 400;
+  }
+}
+
+.Features {
+  padding: 80px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.header {
+  color: #FFA500;
+  margin-bottom: 32px;
+}
+
+.text {
+  width: 50%;
+  text-align: center;
+  line-height: 32px;
+}
+
+.download {
+  position: absolute;
+  top: 24%;
+  left: 50%;
+}
+
+.book {
+  position: absolute;
+  top: 50%;
+  left: 14%;
+}
+
+.checkIn {
+  position: absolute;
+  top: 78%;
+  left: 50%;
+}
+
+.subheader {
+  color: #BCC015;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.subtext {
+  width: 65%;
+  margin-top: 16px;
+  line-height: 28px;
+}

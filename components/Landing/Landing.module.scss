@@ -1,0 +1,38 @@
+.Landing {
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
+  padding: 60px 0;
+  justify-content: space-evenly;
+  overflow-y: hidden;
+
+  &__left {
+    display: flex;
+    padding: 60px 0 80px 120px;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  &__right {
+  }
+
+  &__header {
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 120px;
+    color: #162F26;
+  }
+
+  &__action {
+    margin-top: 60px;
+  }
+
+  &__actionButton {
+    width: 240px;
+    border: none;
+    margin-right: 10px;
+    background: none;
+  }
+
+
+}
