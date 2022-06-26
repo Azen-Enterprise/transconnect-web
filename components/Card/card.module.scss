@@ -1,15 +1,20 @@
 .card {
-  height: 460px;
+
   max-width: 450px;
   display: flex;
   flex-direction: column;
+  margin: 40px;
 
   &__top {
     background-color: #BAC100;
     color: #BAC100;
     border-radius: 35px 35px 0 0;
     display: flex;
-    flex: 0.5;
+    min-height: 220px;
+  }
+
+  .isLong {
+    height: 420px;
   }
 
   &__bottom {
