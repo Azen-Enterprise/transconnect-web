@@ -41,11 +41,18 @@ p {
 .btn__rounded {
   border-radius: 60px;
   text-align: center;
-  
+
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+.lineInput {
+  border-bottom: 1px solid rgb(179, 179, 179);
+  border-top: none;
+  border-left: none;
+  border-right: none;
 }

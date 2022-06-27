@@ -1,10 +1,8 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import About from '../components/About/About'
-import {Footer} from '../components/'
-import HowTo from '../components/HowTo/HowTo'
-import Landing from '../components/Landing/Landing'
+import {Footer, Landing, About, HowTo} from '../components/'
 import styles from '../styles/Home.module.scss'
+import Book from './Book/Book'
 
 
 const Home: NextPage = () => {
@@ -15,9 +13,7 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <Landing />
-        <About />
-        <HowTo />
+        <Book />
       </main>
 
       <footer>
