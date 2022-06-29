@@ -16,9 +16,9 @@ export default function Book() {
       pt={80}
       flexDirection={"column"}
     >
-      <Text lineHeight={1.3} className='header' color={"#fff"} width={"50%"}>
+      <Box lineHeight={1.3} className='header' color={"#fff"} width={"50%"}>
         <Text className='header' color={"#BCC015"}>Booking a bus trip</Text> is now within your fingertips
-      </Text>
+      </Box>
 
       <Flex
         bg={"#fff"}
