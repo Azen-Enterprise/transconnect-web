@@ -13,8 +13,7 @@ export default function AlertCard() {
       pt={40}
       pb={20}
       borderRadius={5}
-      borderColor={'grey'}
-      bg={"#f3f3f3"}
+      bg={"#fff"}
       flexDirection={"column"}
       justifyContent={"space-between"}
       alignItems={"center"}
