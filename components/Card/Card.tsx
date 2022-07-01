@@ -2,24 +2,22 @@ import React from 'react';
 import styles from './card.module.scss';
  
 interface props {
+  subTitle: string,
   title: string,
-  description: string
+  description: string,
+  isLong?: boolean
 }
 
-export default function Card() {
+export default function Card({title, description, subTitle, isLong}: props) {
   return (
     <div className={styles.card}>
-      <div className={styles.card__top}>
+      <div className={ `${isLong && styles.isLong} ${styles.card__top}`}>
         
       </div>
       <div className={styles.card__bottom}>
-        <span className={styles.span}> Gerer all man</span>
-        <h2 className='title'>
-          Book for yourself and others
-        </h2>
-        <p className={styles.card__text}>
-          A quick summary of how downloading the mobile app can boost the user’s travel planning experience
-        </p>
+        <span className={styles.span}>{subTitle}</span>
+        <h2 className='title'>{title}</h2>
+        <p className={styles.card__text}>{description}</p>
       </div>
     </div>
   )
