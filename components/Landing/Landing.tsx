@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Landing.module.scss';
 import Image from 'next/image'
+import { Box } from '@chakra-ui/react';
 
 export default function Landing() {
   return (
@@ -17,12 +18,16 @@ export default function Landing() {
         </div>
       </div>
       <div className={styles.Landing__right}>
-        <Image   
-          src={require('../../assets/landing_image.png')} 
-          alt="Landing Image"
-          width={1000}
-          height={1200}
-        />
+        <Box>
+          <Image
+            src={require('../../assets/landing_image.png')}
+            alt="Landing Image"
+            layout='fixed'
+            objectFit='contain'
+            width={800}
+            height={800}
+          />
+        </Box>
       </div>
 
     </div>

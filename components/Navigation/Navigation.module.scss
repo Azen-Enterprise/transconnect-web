@@ -1,7 +1,7 @@
 .footer {
   background-color: #171717;
   padding: 100px 80px 60px;
-  flex: 1;
+  position: relative;
 
   &__top {
     display: flex;
@@ -35,4 +35,31 @@
     justify-content: space-between;
     flex-direction: row;
   }
+}
+
+.nav {
+  background-color: #162F26;
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 80px;
+
+  &__linkContainer {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__link {
+    color:#fff;
+    font-weight: 700;
+  }
+}
+
+.active {
+    background: #BCC015;
+    padding: 6px 12px;
+    border-radius: 8px;
+    color: #162F26;
 }
