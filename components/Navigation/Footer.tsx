@@ -207,13 +207,13 @@ export default function Footer() {
             Terms of Service | Privacy Policy
           </Text>
         </Flex>
-        <Flex flex={0.9} className={styles.footer__right}>
+        <Flex width={isLessThan448 ? "80%" : "60%"} className={styles.footer__right}>
           <Flex flexDirection={"column"}>
             <Text
               mb={4}
               fontWeight={400}
               color={"#fff"}
-              fontSize={isLessThan896 ? 11 : 16}
+              fontSize={isLessThan896 ? 9 : 16}
             >
               QUICK LINKS
             </Text>
@@ -223,7 +223,7 @@ export default function Footer() {
                 fontWeight={200}
                 color={"#fff"}
                 key={link.title}
-                fontSize={isLessThan896 ? 9 : 16}
+                fontSize={isLessThan896 ? 8 : 16}
               >
                 {link.title}
               </Link>
@@ -244,7 +244,7 @@ export default function Footer() {
                 fontWeight={200}
                 color={"#fff"}
                 key={link.title}
-                fontSize={isLessThan896 ? 9 : 16}
+                fontSize={isLessThan896 ? 8 : 16}
               >
                 {link.title}
               </Link>
@@ -255,7 +255,7 @@ export default function Footer() {
               mb={4}
               fontWeight={400}
               color={"#fff"}
-              fontSize={isLessThan896 ? 10 : 16}
+              fontSize={isLessThan896 ? 9 : 16}
             >
               CUSTOMER HOTLINE
             </Text>
