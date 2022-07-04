@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import styles from './Navigation.module.scss';
 import { useRouter } from 'next/router';
-import { useMediaQuery, Icon, DrawerOverlay, Drawer, DrawerContent, DrawerCloseButton, DrawerHeader, DrawerBody, Input } from '@chakra-ui/react';
+import { useMediaQuery, Icon, DrawerOverlay, Drawer, DrawerContent, DrawerCloseButton, DrawerHeader, DrawerBody, Input, Flex } from '@chakra-ui/react';
 import { FiMenu } from 'react-icons/fi'
 
 const navLinks = [
@@ -73,7 +73,7 @@ export default function NavBar() {
           </DrawerHeader>
 
           <DrawerBody>
-            <ul className={styles.nav__linkContainer}>
+            <Flex flexDirection={"column"} color={"#162F26"}>
               {
                 navLinks.map((link) => (
                   <Link key={link.link} href={link.to} >
@@ -82,7 +82,7 @@ export default function NavBar() {
                 )
                 )
               }
-            </ul>
+            </Flex>
           </DrawerBody>
 
         </DrawerContent>

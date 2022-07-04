@@ -12,9 +12,8 @@
   justify-content: center;
   position: relative;
   
-    @media screen and (max-width: 1012px){
-     padding: 40px;
-
+  @media screen and (max-width: 1012px){
+    padding: 40px;
   } 
 
   &__tutorial {
@@ -62,7 +61,8 @@
     width: 100%;
   } 
   @media screen and (max-width: 896px){
-      line-height: 24px;
+    line-height: 24px;
+    font-size: 14px;
 
   } 
 }
@@ -71,13 +71,12 @@
   position: absolute;
   top: 24%;
   left: 50%;
-          width: 70%;
+  width: 70%;
 
 
   @media screen and (max-width: 1012px){
       top: 20%;
       left: 53%;
-
   } 
   @media screen and (max-width: 792px){
       top: 22%;
@@ -94,12 +93,12 @@
       top: 30%;
       left: 55%;
   } 
-    @media screen and (max-width: 420px){
+  @media screen and (max-width: 420px){
       top: 35%;
   } 
 
-      @media screen and (min-width: 420px){
-      top: 28%;
+  @media screen and (max-width: 420px){
+      top: 30%;
   } 
   
 }
@@ -183,18 +182,20 @@
     @media screen and (max-width: 699px){
     margin-top: -100px;
     } 
-        
     @media screen and (max-width: 539px){
     margin-top: -65px;
     } 
-
     @media screen and (max-width: 499px){
     margin-top: -100px;
-    } 
-
-  @media screen and (max-width: 459px){
+    }
+    @media screen and (max-width: 459px){
     margin-top: -120px;
     } 
-
+    @media screen and (max-width: 419px){
+    margin-top: -100px;
+    } 
+    @media screen and (max-width: 403px){
+    margin-top: -120px;
+    } 
 }
 

@@ -21,9 +21,8 @@
 
     @media screen and (max-width: 896px){
       padding: 40px;
-          margin-top: -180px;
-
-      border-radius: 40px
+      margin-top: -180px;
+      border-radius: 30px
     } 
     
     @media screen and (max-width: 696px){
@@ -42,7 +41,6 @@
   &__right {
     display: flex;
     justify-content: space-between;
-        margin-top: 10px;
 
   }
 
@@ -64,8 +62,7 @@
   align-items: center;
 
   @media screen and (max-width: 768px){
-      padding: 20px 40px;
-
+    padding: 20px 40px;
   } 
 
   &__linkContainer {
@@ -78,6 +75,11 @@
   &__link {
     color:#fff;
     font-weight: 700;
+
+    @media screen and (max-width: 768px){
+      color: #162F26;
+      margin-bottom: 8px;
+    } 
   }
 }
 

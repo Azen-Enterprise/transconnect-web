@@ -136,7 +136,8 @@ export default function Footer() {
           alignItems={"center"}
         >
           <Button
-            mr={4}
+            minW={20}
+            mr={isLessThan448 ? 1 : 4}
             py={isLessThan448 ? 4 : 8}
             px={isLessThan896 ? 8 : 4}
             borderRadius={isLessThan896 ? 40 : 100}
@@ -148,7 +149,7 @@ export default function Footer() {
               color={"#fff"}
               as={IoLogoGooglePlaystore}
             />
-            <Box ml={isLessThan896 ? 2 : 4} textAlign={"left"} color={"#fff"}>
+            <Box ml={isLessThan448 ? 1 : 4} textAlign={"left"} color={"#fff"}>
               <Text fontSize={isLessThan896 ? 10 : 16}>Get it on</Text>
               <Text fontWeight={500} fontSize={isLessThan896 ? 10 : 16}>
                 App Store
@@ -156,11 +157,12 @@ export default function Footer() {
             </Box>
           </Button>
           <Button
+            minW={20}
             borderRadius={100}
             py={isLessThan448 ? 4 : 8}
             px={isLessThan896 ? 8 : 4}
             backgroundColor={"#fff6"}
-            className="btn btn__rounded"
+            className="btn"
           >
             <Icon
               fontSize={isLessThan896 ? 16 : 36}
@@ -185,8 +187,8 @@ export default function Footer() {
             <Image
               src={require("../../assets/footer__logo.png")}
               alt="Footer Logo"
-              width={120}
-              height={40}
+              width={isLessThan448 ? 80 : 120}
+              height={isLessThan448 ? 20 : 40}
             />
           </Box>
           <Text
@@ -227,7 +229,7 @@ export default function Footer() {
               </Link>
             ))}
           </Flex>
-          <Flex flexDirection={"column"}>
+          <Flex flexDirection={"column"} mx={1}>
             <Text
               mb={4}
               fontWeight={400}
