@@ -15,7 +15,6 @@ export default function Book() {
       width="100%"
       bg="#162F26"
       px={isLessThan768 ? 8 : 20}
-
       flexDirection={"column"}
     >
       <Box lineHeight={1.3} className='header' color={"#fff"} width={isLessThan768 ? "100%" : "60%"}>

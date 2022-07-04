@@ -109,6 +109,8 @@ const payments = [
 
 export default function Footer() {
   const [isLessThan896] = useMediaQuery("(max-width: 896px)");
+  const [isLessThan448] = useMediaQuery("(max-width: 448px)");
+
 
   return (
     <footer className={styles.footer}>
@@ -134,16 +136,15 @@ export default function Footer() {
           alignItems={"center"}
         >
           <Button
-            maxW={260}
             mr={4}
-            py={8}
+            py={isLessThan448 ? 4 : 8}
             px={isLessThan896 ? 8 : 4}
-            borderRadius={100}
+            borderRadius={isLessThan896 ? 40 : 100}
             backgroundColor={"#fff6"}
             className="btn"
           >
             <Icon
-              fontSize={isLessThan896 ? 28 : 48}
+              fontSize={isLessThan896 ? 16 : 36}
               color={"#fff"}
               as={IoLogoGooglePlaystore}
             />
@@ -155,20 +156,19 @@ export default function Footer() {
             </Box>
           </Button>
           <Button
-            maxW={260}
             borderRadius={100}
-            py={8}
+            py={isLessThan448 ? 4 : 8}
             px={isLessThan896 ? 8 : 4}
             backgroundColor={"#fff6"}
             className="btn btn__rounded"
           >
             <Icon
-              fontSize={isLessThan896 ? 28 : 48}
+              fontSize={isLessThan896 ? 16 : 36}
               color={"#fff"}
               as={FaApple}
             />
             <Box ml={isLessThan896 ? 2 : 4} textAlign={"left"} color={"#fff"}>
-              <Text fontSize={isLessThan896 ? 12 : 16}>Get it on</Text>
+              <Text fontSize={isLessThan896 ? 10 : 16}>Get it on</Text>
               <Text fontWeight={500} fontSize={isLessThan896 ? 10 : 16}>
                 App Store
               </Text>
