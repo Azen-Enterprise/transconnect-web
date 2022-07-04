@@ -5,16 +5,74 @@
   flex-direction: column;
   margin: 40px;
 
+  @media screen and (max-width: 896px){
+    margin: 10px;
+    width: 360px;
+  } 
+
+  @media screen and (max-width: 779px){
+    margin: 10px;
+    width: 320px;
+  } 
+
+    @media screen and (max-width: 699px){
+    margin: 10px;
+    width: 300px;
+  } 
+    @media screen and (max-width: 659px){
+    margin: 10px;
+    width: 280px;
+  } 
+  @media screen and (max-width: 619px){
+    margin: 10px;
+    width: 240px;
+  } 
+    @media screen and (max-width: 539px){
+    margin: 10px;
+    width: 220px;
+  } 
+      @media screen and (max-width: 499px){
+    margin: 10px;
+    width: 200px;
+  } 
+        @media screen and (max-width: 459px){
+    margin: 10px;
+    width: 180px;
+  } 
+          @media screen and (max-width: 419px){
+    margin: 10px;
+    width: 130px;
+  } 
+
+
   &__top {
     background-color: #BAC100;
     color: #BAC100;
     border-radius: 35px 35px 0 0;
     display: flex;
     min-height: 220px;
+
+
+    @media screen and (max-width: 499px){
+      min-height: 160px;
+      
+    } 
+        @media screen and (max-width: 699px){
+    border-radius: 20px 20px 0 0;
+
+  } 
   }
 
   .isLong {
     height: 420px;
+
+    @media screen and (max-width: 699px){
+      height: 320px;
+    } 
+
+    @media screen and (max-width: 499px){
+      height: 260px;
+    } 
   }
 
   &__bottom {
@@ -26,12 +84,28 @@
     flex: 0.5;
     flex-direction: column;
     justify-content: space-evenly;
+
+
+    @media screen and (max-width: 699px){
+      padding: 20px;
+    border-radius: 0 0 20px 20px;
+
+    } 
   }
 
   &__text {
     font-weight: 200;
     font-size: 20px;
     margin-top: 8px;
+
+
+    @media screen and (max-width: 699px){
+      font-size: 12px;
+    } 
+    @media screen and (max-width: 419px){
+      font-size: 9px;
+    } 
+    
   }
 }
 
@@ -39,4 +113,11 @@
   text-transform: uppercase;
   color:#BAC100;
   margin-bottom: 8px;
+      @media screen and (max-width: 699px){
+      font-size: 12px;
+    } 
+    @media screen and (max-width: 419px){
+      font-size: 10px;
+    } 
+    
 }

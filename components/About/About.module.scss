@@ -1,14 +1,28 @@
 .About {
   background-color: #EDEDED;
   width: 100%;
-  height: 70vh;
+  height: 65vh;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   padding: 60px;
+  overflow-x: hidden;
+
+  @media screen and (max-width: 1012px){
+    width: 100%;
+    padding: 40px;
+  } 
+
+  @media screen and (max-width: 996px){
+    height: 60vh;
+  } 
 
   &__left {
     width: 30%;
+
+  @media screen and (max-width: 1012px){
+    display: none;
+   } 
   }
 
   &__right {
@@ -18,25 +32,51 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @media screen and (max-width: 1012px){
+      justify-content: space-around;
+      width: 100%;
+      padding: 0;
+      text-align: center;
+      align-items: center;
+    } 
   }
 
   &__imageContainer {
     background-color: #fff;
     border-radius: 50%;
     overflow: hidden;
-    height: 400px;
-    width: 400px;
+    height: 100%;
+    width: 100%;
   }
 
   &__btn {
     width: 220px;
     font-size: 20px;
+
+    @media screen and (max-width: 640px){
+    width: 180px;
+    font-size: 14px;
+
+    } 
   }
 
   &__text {
     line-height: 40px;
     font-size: 20px;
     font-weight: 300;
-    color: #353535
+    color: #353535;
+
+    @media screen and (max-width: 1012px){
+      line-height: 30px;
+      font-size: 16px;
+      align-items: center;
+    } 
+
+        @media screen and (max-width: 640px){
+      line-height: 24px;
+      font-size: 14px;
+      align-items: center;
+    } 
   }
 }

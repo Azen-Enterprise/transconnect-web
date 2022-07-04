@@ -38,7 +38,7 @@ export default function Blog() {
       <FormControl display={"flex"} justifyContent={"flex-end"}>
         <Input py={2} mt={1} minW={220} maxW={420} variant="flushed" className='lineInput' placeholder='Search Article' />
       </FormControl>
-      <Text lineHeight={1.3} mt={2} className='header' color={"#fff"} width={"70%"}>
+      <Text lineHeight={1.3} mt={2} className='header' color={"#fff"} width={["", "80%", "70%"]}>
         Read About journeying  <br /> in <span style={{ color: "#BCC015" }}>Cameroon</span>
       </Text>
 

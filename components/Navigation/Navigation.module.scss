@@ -3,6 +3,10 @@
   padding: 100px 80px 60px;
   position: relative;
 
+    @media screen and (max-width: 896px){
+      padding: 100px 10px 60px;;
+    } 
+
   &__top {
     display: flex;
     background-color: #BCC015;
@@ -13,7 +17,17 @@
     border-radius: 60px;
     padding: 60px;
     color: #fff;
+    flex: 1;
 
+    @media screen and (max-width: 896px){
+      padding: 40px;
+      border-radius: 40px
+    } 
+    
+    @media screen and (max-width: 696px){
+      padding: 20px;
+      margin-top: -160px;
+    } 
   }
 
   &__middle {
@@ -26,6 +40,8 @@
   &__right {
     display: flex;
     justify-content: space-between;
+        margin-top: 10px;
+
   }
 
   &__bottom {
@@ -43,6 +59,12 @@
   display: flex;
   justify-content: space-between;
   padding: 40px 80px;
+  align-items: center;
+
+  @media screen and (max-width: 768px){
+      padding: 20px 40px;
+
+  } 
 
   &__linkContainer {
     width: 400px;

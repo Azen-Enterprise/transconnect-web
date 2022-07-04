@@ -4,12 +4,10 @@ import { Landing, About, HowTo } from '../components'
 
 const Home: NextPage = () => {
   return (
-    <div className={styles.container}>
-      <main className={styles.main}>
-        <Landing />
-        <About />
-        <HowTo />
-      </main>
+    <div className='home'>
+      <Landing />
+      <About />
+      <HowTo />
     </div>
   )
 }
