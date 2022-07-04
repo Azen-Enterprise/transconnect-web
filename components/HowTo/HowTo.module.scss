@@ -11,6 +11,10 @@
   flex-direction: column;
   justify-content: center;
   position: relative;
+  
+  @media screen and (max-width: 1012px){
+    padding: 40px;
+  } 
 
   &__tutorial {
     margin-top: 80px;
@@ -28,6 +32,10 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
+    
+  @media screen and (max-width: 896px){
+    padding: 80px 10px;
+  } 
 
   &__main {
     width: 100%;
@@ -48,39 +56,146 @@
   width: 50%;
   text-align: center;
   line-height: 32px;
+
+  @media screen and (max-width: 1012px){
+    width: 100%;
+  } 
+  @media screen and (max-width: 896px){
+    line-height: 24px;
+    font-size: 14px;
+
+  } 
 }
 
 .download {
   position: absolute;
   top: 24%;
   left: 50%;
+  width: 70%;
+
+
+  @media screen and (max-width: 1012px){
+      top: 20%;
+      left: 53%;
+  } 
+  @media screen and (max-width: 792px){
+      top: 22%;
+  } 
+  @media screen and (max-width: 590px){
+      top: 24%;
+      left: 53%;
+  } 
+  @media screen and (max-width: 564px){
+      top: 25%;
+      left: 53%;
+  } 
+  @media screen and (max-width: 448px){
+      top: 30%;
+      left: 55%;
+  } 
+  @media screen and (max-width: 420px){
+      top: 35%;
+  } 
+
+  @media screen and (max-width: 420px){
+      top: 30%;
+  } 
+  
 }
 
 .book {
   position: absolute;
   top: 50%;
-  left: 14%;
+  left: 12%;
+  @media screen and (max-width: 1200px){
+    width: 67%;
+  } 
+
+  @media screen and (max-width: 1012px){
+    top: 47%;
+    left: 8%;
+
+  } 
+  @media screen and (max-width: 792px){
+
+  } 
+  @media screen and (max-width: 576px){
+    top: 49%;
+  } 
+  @media screen and (max-width: 564px){
+
+  } 
+  @media screen and (max-width: 420px){
+    top: 53%;
+  } 
+  
 }
 
 .checkIn {
   position: absolute;
   top: 78%;
   left: 50%;
+  width: 67%;
+
 }
 
 .subheader {
   color: #BCC015;
   font-size: 50px;
   font-weight: 700;
+
+  @media screen and (max-width: 1012px){
+    font-size: 28px;
+  } 
+  @media screen and (max-width: 792px){
+    font-size: 24px;
+
+  } 
+    @media screen and (max-width: 590px){
+    font-size: 20px;
+
+  } 
+  @media screen and (max-width: 448px){
+    font-size: 16px;
+  } 
 }
 
 .subtext {
   width: 65%;
   margin-top: 16px;
   line-height: 28px;
+
+  @media screen and (max-width: 1012px){
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 8px;
+  } 
+  @media screen and (max-width: 448px){
+    font-size: 12px;
+  } 
+  
 }
 
 .specialCards:last-of-type {
   margin-top: -200px;
+  
+    @media screen and (max-width: 699px){
+    margin-top: -100px;
+    } 
+    @media screen and (max-width: 539px){
+    margin-top: -65px;
+    } 
+    @media screen and (max-width: 499px){
+    margin-top: -100px;
+    }
+    @media screen and (max-width: 459px){
+    margin-top: -120px;
+    } 
+    @media screen and (max-width: 419px){
+    margin-top: -100px;
+    } 
+    @media screen and (max-width: 403px){
+    margin-top: -120px;
+    } 
 }
 

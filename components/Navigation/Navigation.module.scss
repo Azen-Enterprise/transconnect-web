@@ -1,0 +1,91 @@
+.footer {
+  background-color: #171717;
+  padding: 100px 80px 60px;
+  position: relative;
+
+    @media screen and (max-width: 896px){
+      padding: 100px 10px 60px;;
+    } 
+
+  &__top {
+    display: flex;
+    background-color: #BCC015;
+    width: 100%;
+    margin-top: -200px;
+    position: relative;
+    margin-bottom: 60px;
+    border-radius: 60px;
+    padding:40px 60px;
+    color: #fff;
+    flex: 1;
+
+    @media screen and (max-width: 896px){
+      padding: 40px;
+      margin-top: -180px;
+      border-radius: 30px
+    } 
+    
+    @media screen and (max-width: 696px){
+      padding: 20px;
+      margin-top: -160px;
+    } 
+  }
+
+  &__middle {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__right {
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  &__bottom {
+    margin-top: 60px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+
+.nav {
+  background-color: #162F26;
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 80px;
+  align-items: center;
+
+  @media screen and (max-width: 768px){
+    padding: 20px 40px;
+  } 
+
+  &__linkContainer {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__link {
+    color:#fff;
+    font-weight: 700;
+
+    @media screen and (max-width: 768px){
+      color: #162F26;
+      margin-bottom: 8px;
+    } 
+  }
+}
+
+.active {
+    background: #BCC015;
+    padding: 6px 12px;
+    border-radius: 8px;
+    color: #162F26;
+}

@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './HowTo.module.scss';
 import Image from 'next/image';
 import Card from '../Card/Card';
+import { useMediaQuery } from '@chakra-ui/react';
 
 const feature = [
   {
@@ -27,6 +28,8 @@ const feature = [
 ]
 
 export default function HowTo() {
+  const [isLessThan319] = useMediaQuery('(max-width: 319px)');
+
   return (
     <div className={styles.container}>
       <div className={styles.Howto}>
@@ -35,7 +38,7 @@ export default function HowTo() {
         <div className={styles.Howto__tutorial}>
           <div className={styles.download}>
             <h3 className={styles.subheader}>Download the app</h3>
-            <p className={styles.subtext}> This section is just designed to allow agencies, organisations, charities and other potential partners get in touch</p>
+            <p className={styles.subtext}> This section is just designed to allow agencies,organisations, charities and other potential partners get in touch</p>
           </div>
           <div className={styles.book}>
             <h3 className={styles.subheader}>Book a trip</h3>
@@ -60,7 +63,7 @@ export default function HowTo() {
               return(
                 <div key={i} className={styles.specialCards}>
                   <Card 
-                    isLong
+                    isLong={!isLessThan319}
                     subTitle={feature.subTitle} 
                     description={feature.description} 
                     title={feature.title} 
