@@ -56,7 +56,7 @@ export default function NavBar() {
         onClose={() => setDrawerIsOpen(false)}
         placement='left'
         onOverlayClick={() => setDrawerIsOpen(false)}
-        className={'chakra-clide'}
+        // className={'chakra-clide'}
       >
         <DrawerOverlay />
         <DrawerContent>
