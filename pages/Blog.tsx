@@ -42,7 +42,7 @@ export default function Blog() {
         Read About journeying  <br /> in <span style={{ color: "#BCC015" }}>Cameroon</span>
       </Text>
 
-      <Flex flexWrap={"wrap"} justifyContent={"center"} mt={20} pb={60}>
+      <Flex flexWrap={"wrap"} justifyContent={"center"} mt={20} pb={60} maxW={"860px"} alignSelf={"center"}>
         {
           blogs.map((blog, i) => (
             <Card

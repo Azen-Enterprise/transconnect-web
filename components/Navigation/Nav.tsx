@@ -56,7 +56,6 @@ export default function NavBar() {
         onClose={() => setDrawerIsOpen(false)}
         placement='left'
         onOverlayClick={() => setDrawerIsOpen(false)}
-        className={'chakra-clide'}
       >
         <DrawerOverlay />
         <DrawerContent>
@@ -76,7 +75,7 @@ export default function NavBar() {
             <Flex flexDirection={"column"} color={"#162F26"}>
               {
                 navLinks.map((link) => (
-                  <Link key={link.link} href={link.to} >
+                  <Link key={link.link} href={link.to}>
                     <a className={`${styles.nav__link} ${router.pathname === link.to && styles.active}`}>{link.link}</a>
                   </Link>
                 )

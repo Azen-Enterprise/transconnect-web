@@ -11,8 +11,8 @@ export default function Book() {
 
   return (
     <Flex
-      height={"100vh"}
       width="100%"
+      pb={16}
       bg="#162F26"
       px={isLessThan768 ? 8 : 20}
       flexDirection={"column"}

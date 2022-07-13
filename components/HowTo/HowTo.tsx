@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './HowTo.module.scss';
 import Image from 'next/image';
 import Card from '../Card/Card';
-import { useMediaQuery } from '@chakra-ui/react';
+import { SimpleGrid, useMediaQuery } from '@chakra-ui/react';
 
 const feature = [
   {
@@ -57,7 +57,7 @@ export default function HowTo() {
       <div className={styles.Features}>
         <h2 className={`header ${styles.header}`}>Features</h2>
         <p className={styles.text}>This sections basically explain where and how users and potential users can download the app and how to manoeuvre their way around.</p>
-        <div className={styles.Features__main}>
+        <SimpleGrid className={styles.Features__main} maxW={920} columns={{ base: 2, sm: 2, lg: 2 }}>
           {feature.map((feature, i) => {
             if(i === 0 || i === 3) {
               return(
@@ -81,7 +81,7 @@ export default function HowTo() {
               </div>
             )
           })}
-        </div>
+        </SimpleGrid>
       </div>
     </div>
   )
